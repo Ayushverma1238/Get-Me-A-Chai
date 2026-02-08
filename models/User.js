@@ -1,0 +1,19 @@
+import mongoose from "mongoose";
+
+const {Schema,model} = mongoose;
+
+const UserSchema = new Schema({
+    email:{type:String, require:true},
+    name:{type:String},
+    username:{type:String},
+    password:{type:String},
+    profile:{type:String},
+    coverPic:{type:String},
+    createdAt:{type:Date, default:Date.now},
+    razorpayid:{type:String},
+    razorpaysecret:{type:String},
+    updatedAt:{type:Date, default:Date.now},
+});
+
+
+export default mongoose.models.User || mongoose.model("User", UserSchema);
