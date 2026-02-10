@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Payment from '@/components/Payment'
+import Payment from '@/components/PaymentPage'
 const PaymentPage = () => {
   return (
     <div>
