@@ -1,13 +1,12 @@
-"use client"
-import React from 'react'
-import Payment from '@/components/PaymentPage'
-const PaymentPage = () => {
+import { Suspense } from "react";
+import Payment from "@/components/PaymentPage";
+
+export const dynamic = "force-dynamic";
+
+export default function Page() {
   return (
-    <div>
-      <Payment/>
-    </div>
-  )
+    <Suspense fallback={<div className="text-white">Loading payment...</div>}>
+      <Payment />
+    </Suspense>
+  );
 }
-
-export default PaymentPage
-
