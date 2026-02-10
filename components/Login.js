@@ -212,7 +212,11 @@ const Login = () => {
             <span>Continue with Google</span>
           </button>
 
-          <button className="flex items-center hover:font-bold transition-all ease-in-out duration-200 w-80 bg-gray-200 hover:bg-gray-400 border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+          <button className="flex items-center hover:font-bold transition-all ease-in-out duration-200 w-80 bg-gray-200 hover:bg-gray-400 border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+          onClick={() => {
+              signIn("linkedin", { callbackUrl: "/dashboard" });
+            }}
+            >
             <svg
               className="h-6 w-6 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +246,11 @@ const Login = () => {
             <span>Continue with LinkedIn</span>
           </button>
 
-          <button className="flex items-center hover:font-bold transition-all ease-in-out duration-200 w-80 bg-gray-200 hover:bg-gray-400 border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+          <button className="flex items-center hover:font-bold transition-all ease-in-out duration-200 w-80 bg-gray-200 hover:bg-gray-400 border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+          onClick={() => {
+              signIn("twitter", { callbackUrl: "/dashboard" });
+            }}
+          >
             <svg
               className="h-6 w-6 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -273,7 +281,12 @@ const Login = () => {
             <span>Continue with Twitter</span>
           </button>
 
-          <button className="flex items-center hover:font-bold transition-all ease-in-out duration-200 w-80 bg-gray-200 hover:bg-gray-400 border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+          <button className="flex items-center hover:font-bold transition-all ease-in-out duration-200 w-80 bg-gray-200 hover:bg-gray-400 border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        onClick={() => {
+              signIn("facebook", { callbackUrl: "/dashboard" });
+            }}
+          >
+
             <svg
               className="h-6 w-6 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -352,7 +365,7 @@ const Login = () => {
             <span>Continue with Github</span>
           </button>
 
-          <button className="flex items-center hover:font-bold transition-all ease-in-out duration-200 w-80 bg-gray-200 hover:bg-gray-400 border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+          {/* <button className="flex items-center hover:font-bold transition-all ease-in-out duration-200 w-80 bg-gray-200 hover:bg-gray-400 border border-gray-300 rounded-lg shadow-md max-w-xs px-6 py-2 text-sm font-medium text-gray-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
             <svg
               className="h-6 w-6 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -383,7 +396,7 @@ const Login = () => {
             </svg>
 
             <span>Continue with Apple</span>
-          </button>
+          </button> */}
         </div>
         <div className="border border-gray-600 my-15"></div>
       </div>
