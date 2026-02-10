@@ -1,4 +1,6 @@
 "use client";
+export const dynamic = "force-dynamic";
+
 import { fetchPayment, initiate } from "@/actions/useractions";
 import React, { useEffect } from "react";
 import Script from "next/script";
