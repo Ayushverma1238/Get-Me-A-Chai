@@ -1,5 +1,5 @@
 ##Check Out our website from 
-[URL: ](https://get-me-a-chai-wivz.onrender.com)
+[Get-Me-A-Chai](https://get-me-a-chai-wivz.onrender.com)
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
