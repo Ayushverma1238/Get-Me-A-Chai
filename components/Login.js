@@ -127,7 +127,7 @@ const Login = () => {
             </button>
           </form>
           <div className="flex gap-3 mt-4 items-center text-gray-300 justify-center">
-            Register Now?{" "}
+            New User?{" "}
             <div className="relative inline-block group">
               <Link
                 href="/register"
